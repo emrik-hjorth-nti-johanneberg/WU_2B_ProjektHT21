@@ -4,7 +4,21 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: white;
+    /* background-color: rgb(40, 40, 40); */
+}
+
+#indexbody {
     background-color: rgb(40, 40, 40);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+#menybody {
+    background-color: rgb(32, 8, 8);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
 }
 
 #hem {
@@ -27,7 +41,7 @@
     background-color: rgb(32, 8, 8);
 }
 
-nav {
+#stickymeny {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -63,10 +77,81 @@ nav {
     background-color: transparent;
 }
 
+#boka {
+    margin-bottom: 12.5vh;
+}
+
+
 header {
     background-color: transparent;
 }
 
 h2 {
     background-color: transparent;
+}
+
+a {
+    background-color: transparent;
+    
+}
+
+#meny {
+    height: 50vh;
+    width: 70vw;
+    gap: 20px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'as bc'
+    'we rt'
+    ;
+}
+
+#menybox1 {
+    grid-area: as;
+    background-color: rgb(60, 20, 20);
+    border-radius: 25px;
+}
+
+#menybox2 {
+    grid-area: bc;
+    background-color: rgb(60, 20, 20);
+    border-radius: 25px;
+}
+
+#menybox3 {
+    grid-area: we;
+    background-color: rgb(60, 20, 20);
+    border-radius: 25px;
+}
+
+#menybox4 {
+    grid-area: rt;
+    background-color: rgb(60, 20, 20);
+    border-radius: 25px;
+}
+
+#menygridwrap {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menyboxar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#faq {
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15rem;
+    background-color: rgb(32, 8, 8);
 }
