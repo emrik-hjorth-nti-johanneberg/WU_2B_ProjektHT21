@@ -8,3 +8,21 @@
     
     ;
 }
+
+
+#list_gridwrapper {
+    width: 1fr;
+    height: 80px;
+    background-color: red;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.list_item {
+    padding: 16px;
+    background-color: green;
+    width: 200px;
+}
