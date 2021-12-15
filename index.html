@@ -6,28 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 </head>
 <body>
     
-    <!-- <div id="gridwrap"></div> -->
-        <section id="title">
-            <Header>Restaurant Title</Header>
-        </section>
-        <nav>
-            <ul id="list_gridwrapper">
-                <li class="list_item">Hem</li>
-                <li class="list_item">Meny</li>
-                <li class="list_item">Boka</li>
-                <li class="list_item">Om Oss</li>
-                <li class="list_item">Faq</li>
-            </ul>
-        </nav> <!-- gör css sist -->
-        
-        <section id="" class="sections"></section>
-        <section id="" class="sections"></section>
-        <section id="" class="sections"></section>
-        <section id="" class="sections"></section>
-        <section id="" class="sections">Hej</section>
+
+    <section id="hem">
+        <Header>Shut Up and Eat It</Header>
+    </section>
+    <nav>
+        <ul id="list_gridwrapper">
+            <li onclick="tillhem()" id="hemknapp" class="list_item">Hem</li>
+            <li onclick="tillmeny()" id="menyknapp" class="list_item">Meny</li>
+            <li onclick="tillboka()" id="bokaknapp" class="list_item">Boka</li>
+            <li onclick="tillomoss()" id="omossknapp" class="list_item">Om Oss</li>
+            <li onclick="tillfaq()" id="faqknapp" class="list_item">FAQ</li>
+        </ul>
+    </nav> <!-- gör css sist -->
+      
+    <section id="meny" class="sections"><h2>Vår mat</h2>
+        <p class="sectiontext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+
+    <section id="boka" class="sections"><h2>Boka</h2>
+        <p class="sectiontext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+
+    <section id="omoss" class="sections"><h2>Om oss</h2>
+        <p class="sectiontext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+
+    <section id="faq" class="sections"><h2>FAQ</h2>
+        <p class="sectiontext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+
+    <div id="scrollfunctions">
+        <script>
+            function tillhem() {
+              var elmnt = document.getElementById("hem");
+              elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        </script>
+        <script>
+            function tillmeny() {
+              var elmnt = document.getElementById("meny");
+              elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        </script>
+        <script>
+            function tillboka() {
+              var elmnt = document.getElementById("boka");
+              elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        </script>
+        <script>
+            function tillomoss() {
+              var elmnt = document.getElementById("omoss");
+              elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        </script>
+        <script>
+            function tillfaq() {
+              var elmnt = document.getElementById("faq");
+              elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        </script>
+    </div>
         
 </body>
 </html>
