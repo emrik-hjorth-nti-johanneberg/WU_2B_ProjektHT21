@@ -4,6 +4,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: white;
+    user-select: none;
     /* background-color: rgb(40, 40, 40); */
 }
 
@@ -55,6 +56,7 @@
     text-align: center;
     font-size: 18px;
     border-radius: 12px;
+    user-select: none;
 }
 
 .list_item:hover {
@@ -92,7 +94,7 @@ h2 {
 
 a {
     background-color: transparent;
-    
+    text-decoration: none;
 }
 
 #meny {
@@ -154,4 +156,8 @@ a {
     justify-content: center;
     column-gap: 15rem;
     background-color: rgb(32, 8, 8);
+}
+
+body {
+    background-image: url("../img/Black-stones.jpg");
 }
