@@ -161,3 +161,9 @@ a {
 body {
     background-image: url("../img/Black-stones.jpg");
 }
+
+#Logga {
+    width: 100px;
+    height: auto;
+    padding-right: 30px;
+}
